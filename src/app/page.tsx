@@ -3,13 +3,38 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/constants/images";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#111111] text-white flex items-center">
+    <div className="min-h-screen bg-[#111111] text-white">
+      {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-20">
-          <div className="flex-1 space-y-8">
+          <div className="relative flex-shrink-0 order-2 md:order-1">
+            <div className="w-[420px] h-[420px] rounded-full overflow-hidden bg-[#1A1A1A]">
+              <Image
+                src={images.profile}
+                alt="Profile"
+                width={420}
+                height={420}
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
+            <div className="absolute inset-0 -z-10 translate-x-6 translate-y-6">
+              <div
+                className="w-full h-full rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
+                  backgroundSize: "16px 16px",
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="flex-1 space-y-8 order-1 md:order-2">
             <h1 className="text-7xl font-bold leading-tight tracking-tight">
               <div>Hey there, I'm</div>
               <div>
@@ -76,31 +101,11 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          <div className="relative flex-shrink-0">
-            <div className="w-[420px] h-[420px] rounded-full overflow-hidden bg-[#1A1A1A]">
-              <Image
-                src={images.profile}
-                alt="Profile"
-                width={420}
-                height={420}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-            <div className="absolute inset-0 -z-10 translate-x-6 translate-y-6">
-              <div
-                className="w-full h-full rounded-full"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
-                  backgroundSize: "16px 16px",
-                }}
-              />
-            </div>
-          </div>
         </div>
       </div>
+
+      {/* Gallery Section */}
+      <Gallery />
     </div>
   );
 }
