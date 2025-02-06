@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/constants/images";
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
             <h1 className="text-7xl font-bold leading-tight tracking-tight">
               <div>Hey there, I'm</div>
               <div>
-                <span className="bg-gradient-to-r from-[#FFD700] via-[#90EE90] to-[#98FB98] text-transparent bg-clip-text">
-                  Akash Hamirwasia.
+                <span className="bg-gradient-to-r from-[#FF00FF] via-[#C850C0] to-[#8A2BE2] hover:from-[#C850C0] hover:via-[#8A2BE2] hover:to-[#FF00FF] text-transparent bg-clip-text transition-all duration-300">
+                  Aashima Ahuja
                 </span>
               </div>
             </h1>
@@ -79,7 +80,7 @@ export default function Home() {
           <div className="relative flex-shrink-0">
             <div className="w-[420px] h-[420px] rounded-full overflow-hidden bg-[#1A1A1A]">
               <Image
-                src="/your-photo.jpg"
+                src={images.profile}
                 alt="Profile"
                 width={420}
                 height={420}
