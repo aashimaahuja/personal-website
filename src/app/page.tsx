@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/constants/images";
 import Gallery from "@/components/Gallery";
+import UpcomingCourse from "@/components/UpcomingCourse";
+import WorkshopsAndCourses from "@/components/WorkshopsAndCourses";
 
 export default function Home() {
   return (
@@ -106,6 +108,12 @@ export default function Home() {
 
       {/* Gallery Section */}
       <Gallery />
+
+      {/* Upcoming Course Section */}
+      <UpcomingCourse />
+
+      {/* Workshops & Courses Section */}
+      <WorkshopsAndCourses />
     </div>
   );
 }
