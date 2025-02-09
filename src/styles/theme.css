@@ -1,0 +1,60 @@
+:root {
+  /* Base colors */
+  --color-primary: 200, 80, 192; /* #C850C0 */
+  --color-primary-hover: 255, 0, 255; /* #FF00FF */
+  --color-text: 0, 0, 0;
+  --color-text-secondary: 153, 153, 153; /* #999999 */
+  --color-background: 17, 17, 17; /* #111111 - Main app background */
+  --color-background-elevated: 26, 26, 26; /* #1A1A1A */
+  --color-background-elevated-hover: 34, 34, 34; /* #222222 */
+
+  /* Theme-specific colors */
+  --color-gradient-start: 255, 0, 255; /* #FF00FF */
+  --color-gradient-middle: 200, 80, 192; /* #C850C0 */
+  --color-gradient-end: 138, 43, 226; /* #8A2BE2 */
+}
+
+.dark {
+  --color-text: 255, 255, 255;
+  --color-text-secondary: 153, 153, 153;
+  --color-background: 17, 17, 17; /* #111111 */
+  --color-background-elevated: 26, 26, 26;
+  --color-background-elevated-hover: 34, 34, 34;
+}
+
+/* Utility classes */
+.text-primary {
+  color: rgb(var(--color-primary));
+}
+
+.text-primary-hover:hover {
+  color: rgb(var(--color-primary-hover));
+}
+
+.bg-primary {
+  background-color: rgb(var(--color-primary));
+}
+
+.bg-primary-10 {
+  background-color: rgba(var(--color-primary), 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    rgb(var(--color-gradient-start)),
+    rgb(var(--color-gradient-middle)),
+    rgb(var(--color-gradient-end))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-elevated {
+  background-color: rgb(var(--color-background-elevated));
+}
+
+.bg-elevated-hover:hover {
+  background-color: rgb(var(--color-background-elevated-hover));
+}

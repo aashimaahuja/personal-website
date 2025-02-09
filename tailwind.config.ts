@@ -6,8 +6,20 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: {
+          DEFAULT: "#ffffff",
+          dark: "#111111",
+        },
+        primary: {
+          DEFAULT: "#C850C0",
+          hover: "#FF00FF",
+        },
+      },
+    },
   },
   plugins: [],
 };

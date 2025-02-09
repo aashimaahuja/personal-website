@@ -11,7 +11,7 @@ export default function WorkshopsAndCourses() {
         <div className="space-y-4">
           <h2 className="text-4xl font-bold">
             <span className="bg-gradient-to-r from-[#FF00FF] via-[#C850C0] to-[#8A2BE2] text-transparent bg-clip-text">
-              Workshops & Courses
+              Courses
             </span>
           </h2>
           <p className="text-[#999999] text-xl max-w-3xl">
@@ -27,32 +27,30 @@ export default function WorkshopsAndCourses() {
             <div className="aspect-video rounded-2xl overflow-hidden">
               <Image
                 src={images.gallery.workspace}
-                alt="React Fundamentals"
+                alt="React the Right Way"
                 width={600}
                 height={338}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="space-y-2">
-              <span className="text-sm text-[#C850C0] font-medium">Course</span>
-              <h3 className="text-xl font-semibold">React Fundamentals</h3>
-              <p className="text-[#999999] text-sm">
-                Master the basics of React including hooks, state management,
-                and component patterns.
+              <span className="text-sm text-[#C850C0] font-medium">
+                Live Course
+              </span>
+              <h3 className="text-xl font-semibold">React the Right Way</h3>
+              <p className="text-[#999999] text-sm line-clamp-3">
+                This course focuses on writing quality code in React. Learn
+                about modern tools like pnpm, Vite, and Nx, proper folder
+                structure, efficient hooks usage, optimization, and more.
               </p>
             </div>
             <div className="pt-4">
               <Link
-                href="/workshops/react-fundamentals"
+                href="/workshops/react-the-right-way"
                 className="inline-flex items-center text-sm font-medium text-[#C850C0] hover:text-[#FF00FF] transition-colors"
               >
                 Learn more
-                <svg
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M13.75 6.75L19.25 12L13.75 17.25"
                     stroke="currentColor"
@@ -77,7 +75,7 @@ export default function WorkshopsAndCourses() {
             <div className="aspect-video rounded-2xl overflow-hidden">
               <Image
                 src={images.gallery.speaking}
-                alt="Next.js Advanced"
+                alt="Use Git like a Pro"
                 width={600}
                 height={338}
                 className="w-full h-full object-cover"
@@ -85,26 +83,22 @@ export default function WorkshopsAndCourses() {
             </div>
             <div className="space-y-2">
               <span className="text-sm text-[#C850C0] font-medium">
-                Workshop
+                Live Course
               </span>
-              <h3 className="text-xl font-semibold">Next.js Advanced</h3>
-              <p className="text-[#999999] text-sm">
-                Deep dive into Next.js features, server components, and
-                deployment strategies.
+              <h3 className="text-xl font-semibold">Use Git like a Pro</h3>
+              <p className="text-[#999999] text-sm line-clamp-3">
+                A comprehensive journey through Git and GitHub, covering
+                fundamentals and advanced aspects. Learn version control,
+                branching, configurations, and advanced techniques.
               </p>
             </div>
             <div className="pt-4">
               <Link
-                href="/workshops/nextjs-advanced"
+                href="/workshops/git-like-pro"
                 className="inline-flex items-center text-sm font-medium text-[#C850C0] hover:text-[#FF00FF] transition-colors"
               >
                 Learn more
-                <svg
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M13.75 6.75L19.25 12L13.75 17.25"
                     stroke="currentColor"
@@ -129,32 +123,32 @@ export default function WorkshopsAndCourses() {
             <div className="aspect-video rounded-2xl overflow-hidden">
               <Image
                 src={images.gallery.adventure}
-                alt="TypeScript Mastery"
+                alt="Frontend Interview Prep"
                 width={600}
                 height={338}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="space-y-2">
-              <span className="text-sm text-[#C850C0] font-medium">Course</span>
-              <h3 className="text-xl font-semibold">TypeScript Mastery</h3>
-              <p className="text-[#999999] text-sm">
-                Learn advanced TypeScript patterns and best practices for large
-                applications.
+              <span className="text-sm text-[#C850C0] font-medium">
+                Live Course
+              </span>
+              <h3 className="text-xl font-semibold">
+                Cracking the Frontend Interview
+              </h3>
+              <p className="text-[#999999] text-sm line-clamp-3">
+                Comprehensive preparation for frontend engineer interviews. From
+                resume building to interview rounds, get guided through the
+                entire process by Meta frontend engineer.
               </p>
             </div>
             <div className="pt-4">
               <Link
-                href="/workshops/typescript-mastery"
+                href="/workshops/frontend-interview"
                 className="inline-flex items-center text-sm font-medium text-[#C850C0] hover:text-[#FF00FF] transition-colors"
               >
                 Learn more
-                <svg
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M13.75 6.75L19.25 12L13.75 17.25"
                     stroke="currentColor"
