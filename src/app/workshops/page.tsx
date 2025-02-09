@@ -6,11 +6,11 @@ import { upcomingCourses, courses } from "@/data/courses";
 
 export default function Workshops() {
   return (
-    <div className="min-h-screen bg-[#111111] text-white pt-32">
+    <div className="min-h-screen pt-16 pb-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-24">
           {/* Upcoming Courses Section */}
-          <div className="space-y-16">
+          <div className="space-y-12">
             <div className="space-y-4">
               <h2 className="text-5xl font-bold">
                 <span className="text-gradient">Upcoming Courses</span>
@@ -25,7 +25,7 @@ export default function Workshops() {
               {upcomingCourses.map((course, index) => (
                 <div
                   key={index}
-                  className="bg-elevated rounded-2xl overflow-hidden group bg-elevated-hover transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(var(--color-primary))]/10"
+                  className="bg-[rgb(var(--color-background-elevated))] rounded-2xl overflow-hidden shadow-lg"
                 >
                   <div className="aspect-[2/1] relative">
                     <Image
@@ -34,30 +34,30 @@ export default function Workshops() {
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
                   </div>
                   <div className="p-6 space-y-4">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs text-primary font-medium bg-primary-10 px-3 py-1 rounded-full">
+                        <span className="text-sm text-primary font-medium bg-primary-10 px-3 py-1 rounded-full">
                           {course.type}
                         </span>
-                        <span className="text-xs text-[rgb(var(--color-text-secondary))]">
+                        <span className="text-sm text-[rgb(var(--color-text-secondary))]">
                           {course.date}
                         </span>
                       </div>
-                      <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-semibold text-[rgb(var(--color-text))]">
                         {course.title}
                       </h3>
-                      <p className="text-sm text-[rgb(var(--color-text-secondary))] leading-relaxed line-clamp-3">
+                      <p className="text-sm text-[rgb(var(--color-text-secondary))] leading-relaxed line-clamp-2">
                         {course.description}
                       </p>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-[#C850C0]">
+                      <span className="text-sm font-medium text-primary bg-primary-10 px-3 py-1 rounded-full">
                         {course.status}
                       </span>
-                      <button className="inline-flex items-center text-sm font-medium text-[#999999] hover:text-[#C850C0] transition-colors">
+                      <button className="inline-flex items-center text-sm font-medium text-primary bg-primary-10 px-3 py-1 rounded-full">
                         Get Notified
                         <svg
                           className="w-4 h-4 ml-2"
@@ -90,11 +90,9 @@ export default function Workshops() {
           <div className="space-y-16">
             <div className="space-y-4">
               <h1 className="text-5xl font-bold">
-                <span className="bg-gradient-to-r from-[#FF00FF] via-[#C850C0] to-[#8A2BE2] text-transparent bg-clip-text">
-                  Live Courses
-                </span>
+                <span className="text-gradient">Live Courses</span>
               </h1>
-              <p className="text-[#999999] text-xl max-w-3xl">
+              <p className="text-[rgb(var(--color-text-secondary))] text-xl max-w-3xl">
                 Level up your development skills with interactive workshops and
                 comprehensive courses.
               </p>
@@ -105,7 +103,7 @@ export default function Workshops() {
               {courses.map((course, index) => (
                 <div
                   key={index}
-                  className="bg-[#1A1A1A] rounded-2xl overflow-hidden"
+                  className="bg-[rgb(var(--color-background-elevated))] rounded-2xl overflow-hidden"
                 >
                   <div className="aspect-[2/1] relative">
                     <Image
@@ -118,17 +116,19 @@ export default function Workshops() {
                   <div className="p-6 space-y-4">
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs text-[#C850C0] font-medium bg-[#C850C0]/10 px-3 py-1 rounded-full">
+                        <span className="text-xs text-primary font-medium bg-primary-10 px-3 py-1 rounded-full">
                           {course.type}
                         </span>
                         {course.level && (
-                          <span className="text-xs text-[#999999]">
+                          <span className="text-xs text-[rgb(var(--color-text-secondary))]">
                             {course.level}
                           </span>
                         )}
                       </div>
-                      <h3 className="text-xl font-semibold">{course.title}</h3>
-                      <p className="text-sm text-[#999999] leading-relaxed line-clamp-3">
+                      <h3 className="text-xl font-semibold text-[rgb(var(--color-text))]">
+                        {course.title}
+                      </h3>
+                      <p className="text-sm text-[rgb(var(--color-text-secondary))] leading-relaxed line-clamp-3">
                         {course.description}
                       </p>
                     </div>
@@ -136,7 +136,7 @@ export default function Workshops() {
                       <Link
                         href={course.link}
                         target="_blank"
-                        className="inline-flex items-center text-sm font-medium text-[#C850C0] hover:text-[#FF00FF] transition-colors"
+                        className="inline-flex items-center text-sm font-medium text-primary hover:text-[rgb(var(--color-primary-hover))] transition-colors"
                       >
                         View Details
                         <svg

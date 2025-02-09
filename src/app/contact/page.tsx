@@ -9,7 +9,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#111111] text-white pt-32">
+    <div className="min-h-screen pt-16 pb-16 bg-[#111111] text-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-16">
           {/* Header */}

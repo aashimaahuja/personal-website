@@ -31,12 +31,12 @@ export default function UpcomingCourse() {
                         {course.type}
                       </span>
                       {course.date && (
-                        <span className="text-sm text-[rgb(var(--color-text-secondary))]">
+                        <span className="text-[rgb(var(--color-text-secondary))]">
                           {course.date}
                         </span>
                       )}
                     </div>
-                    <h2 className="text-4xl font-bold leading-tight">
+                    <h2 className="text-4xl font-bold leading-tight text-[rgb(var(--color-text))]">
                       {course.title}
                     </h2>
                     <p className="text-[rgb(var(--color-text-secondary))] text-lg leading-relaxed line-clamp-3">
@@ -79,7 +79,7 @@ export default function UpcomingCourse() {
                         className="w-full h-full rounded-3xl"
                         style={{
                           background:
-                            "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)",
+                            "radial-gradient(circle, rgba(var(--color-text-secondary), 0.1) 1px, transparent 1px)",
                           backgroundSize: "16px 16px",
                         }}
                       />

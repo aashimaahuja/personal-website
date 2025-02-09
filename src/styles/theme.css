@@ -1,25 +1,26 @@
 :root {
-  /* Base colors */
+  /* Light theme colors */
   --color-primary: 200, 80, 192; /* #C850C0 */
   --color-primary-hover: 255, 0, 255; /* #FF00FF */
-  --color-text: 0, 0, 0;
-  --color-text-secondary: 153, 153, 153; /* #999999 */
-  --color-background: 17, 17, 17; /* #111111 - Main app background */
-  --color-background-elevated: 26, 26, 26; /* #1A1A1A */
-  --color-background-elevated-hover: 34, 34, 34; /* #222222 */
+  --color-text: 17, 17, 17; /* #111111 */
+  --color-text-secondary: 102, 102, 102; /* #666666 */
+  --color-background: 255, 255, 255; /* #FFFFFF */
+  --color-background-elevated: 245, 245, 245; /* #F5F5F5 */
+  --color-background-elevated-hover: 235, 235, 235; /* #EBEBEB */
 
-  /* Theme-specific colors */
+  /* Gradient colors - same for both themes */
   --color-gradient-start: 255, 0, 255; /* #FF00FF */
   --color-gradient-middle: 200, 80, 192; /* #C850C0 */
   --color-gradient-end: 138, 43, 226; /* #8A2BE2 */
 }
 
 .dark {
-  --color-text: 255, 255, 255;
-  --color-text-secondary: 153, 153, 153;
+  /* Dark theme colors */
+  --color-text: 255, 255, 255; /* #FFFFFF */
+  --color-text-secondary: 153, 153, 153; /* #999999 */
   --color-background: 17, 17, 17; /* #111111 */
-  --color-background-elevated: 26, 26, 26;
-  --color-background-elevated-hover: 34, 34, 34;
+  --color-background-elevated: 26, 26, 26; /* #1A1A1A */
+  --color-background-elevated-hover: 34, 34, 34; /* #222222 */
 }
 
 /* Utility classes */
