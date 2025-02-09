@@ -8,18 +8,19 @@ export default function Contact() {
     // Handle form submission
   };
 
+  const inputStyles =
+    "w-full px-4 py-3 rounded-xl bg-[rgb(var(--color-background-elevated))] border border-[rgb(var(--color-text-secondary))] focus:border-[rgb(var(--color-primary))]/30 text-[rgb(var(--color-text))] placeholder-[rgb(var(--color-text-secondary))] outline-none transition-colors";
+
   return (
-    <div className="min-h-screen pt-16 pb-16 bg-[#111111] text-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="min-h-screen pt-16 pb-16">
+      <div className="max-w-6xl mx-auto px-4 pt-16">
         <div className="space-y-16">
           {/* Header */}
           <div className="space-y-4">
             <h1 className="text-5xl font-bold">
-              <span className="bg-gradient-to-r from-[#FF00FF] via-[#C850C0] to-[#8A2BE2] text-transparent bg-clip-text">
-                Get in Touch
-              </span>
+              <span className="text-gradient">Get in Touch</span>
             </h1>
-            <p className="text-[#999999] text-xl max-w-3xl">
+            <p className="text-[rgb(var(--color-text-secondary))] text-xl max-w-3xl">
               Have a question or want to work together? Feel free to reach out!
             </p>
           </div>
@@ -29,7 +30,10 @@ export default function Contact() {
             <div className="space-y-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-4">
-                  <label htmlFor="name" className="block text-sm font-medium">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-[rgb(var(--color-text))]"
+                  >
                     Name
                   </label>
                   <input
@@ -37,13 +41,16 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-[#1A1A1A] border border-[#333333] focus:border-[#C850C0] text-white placeholder-[#666666] transition-colors"
+                    className={inputStyles}
                     placeholder="Your name"
                   />
                 </div>
 
                 <div className="space-y-4">
-                  <label htmlFor="email" className="block text-sm font-medium">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-[rgb(var(--color-text))]"
+                  >
                     Email
                   </label>
                   <input
@@ -51,7 +58,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-[#1A1A1A] border border-[#333333] focus:border-[#C850C0] text-white placeholder-[#666666] transition-colors"
+                    className={inputStyles}
                     placeholder="your@email.com"
                   />
                 </div>
@@ -59,7 +66,7 @@ export default function Contact() {
                 <div className="space-y-4">
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium"
+                    className="block text-sm font-medium text-[rgb(var(--color-text))]"
                   >
                     Subject
                   </label>
@@ -68,7 +75,7 @@ export default function Contact() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-[#1A1A1A] border border-[#333333] focus:border-[#C850C0] text-white placeholder-[#666666] transition-colors"
+                    className={inputStyles}
                     placeholder="What's this about?"
                   />
                 </div>
@@ -76,7 +83,7 @@ export default function Contact() {
                 <div className="space-y-4">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium"
+                    className="block text-sm font-medium text-[rgb(var(--color-text))]"
                   >
                     Message
                   </label>
@@ -85,7 +92,7 @@ export default function Contact() {
                     name="message"
                     rows={6}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-[#1A1A1A] border border-[#333333] focus:border-[#C850C0] text-white placeholder-[#666666] transition-colors resize-none"
+                    className={`${inputStyles} resize-none`}
                     placeholder="Your message..."
                   />
                 </div>
@@ -93,7 +100,7 @@ export default function Contact() {
                 <div className="pb-4">
                   <button
                     type="submit"
-                    className="w-full px-8 py-4 rounded-full bg-[#C850C0] hover:bg-[#FF00FF] text-white font-medium transition-colors"
+                    className="w-full px-8 py-4 rounded-full bg-primary hover:bg-[rgb(var(--color-primary-hover))] text-[rgb(var(--color-text))] font-medium transition-colors"
                   >
                     Send Message
                   </button>
@@ -103,12 +110,14 @@ export default function Contact() {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="bg-[#1A1A1A] rounded-3xl p-8 space-y-6">
-                <h2 className="text-2xl font-semibold">Contact Information</h2>
+              <div className="bg-[rgb(var(--color-background-elevated))] rounded-3xl p-8 space-y-6">
+                <h2 className="text-2xl font-semibold text-[rgb(var(--color-text))]">
+                  Contact Information
+                </h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <svg
-                      className="w-6 h-6 mt-1 text-[#C850C0]"
+                      className="w-6 h-6 mt-1 text-primary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -121,10 +130,12 @@ export default function Contact() {
                       />
                     </svg>
                     <div>
-                      <h3 className="font-medium">Email</h3>
+                      <h3 className="font-medium text-[rgb(var(--color-text))]">
+                        Email
+                      </h3>
                       <Link
                         href="mailto:hello@example.com"
-                        className="text-[#999999] hover:text-[#C850C0] transition-colors"
+                        className="text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                       >
                         hello@example.com
                       </Link>
@@ -133,7 +144,7 @@ export default function Contact() {
 
                   <div className="flex items-start gap-4">
                     <svg
-                      className="w-6 h-6 mt-1 text-[#C850C0]"
+                      className="w-6 h-6 mt-1 text-primary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -152,20 +163,26 @@ export default function Contact() {
                       />
                     </svg>
                     <div>
-                      <h3 className="font-medium">Location</h3>
-                      <p className="text-[#999999]">New Delhi, India</p>
+                      <h3 className="font-medium text-[rgb(var(--color-text))]">
+                        Location
+                      </h3>
+                      <p className="text-[rgb(var(--color-text-secondary))]">
+                        New Delhi, India
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Social Links */}
                 <div className="space-y-4 pt-6">
-                  <h3 className="font-medium">Follow Me</h3>
+                  <h3 className="font-medium text-[rgb(var(--color-text))]">
+                    Follow Me
+                  </h3>
                   <div className="flex items-center gap-4">
                     <Link
                       href="https://x.com/aashimaahuja22"
                       target="_blank"
-                      className="text-[#999999] hover:text-[#C850C0] transition-colors"
+                      className="text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
@@ -178,7 +195,7 @@ export default function Contact() {
                     <Link
                       href="https://www.instagram.com/aashi811"
                       target="_blank"
-                      className="text-[#999999] hover:text-[#C850C0] transition-colors"
+                      className="text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
@@ -191,7 +208,7 @@ export default function Contact() {
                     <Link
                       href="https://github.com/AashimaAhuja"
                       target="_blank"
-                      className="text-[#999999] hover:text-[#C850C0] transition-colors"
+                      className="text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
@@ -204,7 +221,7 @@ export default function Contact() {
                     <Link
                       href="https://www.linkedin.com/in/aashimaahuja/"
                       target="_blank"
-                      className="text-[#999999] hover:text-[#C850C0] transition-colors"
+                      className="text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                     >
                       <svg
                         className="w-6 h-6"

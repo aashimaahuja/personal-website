@@ -4,7 +4,7 @@ import AboutProfile from "@/components/AboutProfile";
 export default function About() {
   return (
     <div className="min-h-screen pt-16 pb-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 pt-16">
         <div className="space-y-12">
           {/* Header */}
           <div className="space-y-4">

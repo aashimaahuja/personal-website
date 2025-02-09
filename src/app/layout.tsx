@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <head>
+      {/* <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -28,7 +28,7 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
+      </head> */}
       <body className={inter.className}>
         <ThemeProvider>
           <Navbar />

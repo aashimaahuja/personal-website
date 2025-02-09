@@ -4,8 +4,8 @@ import Image from "next/image";
 import { images } from "@/constants/images";
 import Gallery from "@/components/Gallery";
 import UpcomingCourse from "@/components/UpcomingCourse";
-import WorkshopsAndCourses from "@/components/WorkshopsAndCourses";
 import Talks from "@/components/Talks";
+import Courses from "@/components/Courses";
 
 export default function Home() {
   return (
@@ -126,7 +126,10 @@ export default function Home() {
       <UpcomingCourse />
 
       {/* Workshops & Courses Section */}
-      <WorkshopsAndCourses />
+      {/* <WorkshopsAndCourses /> */}
+      <div className="max-w-6xl mx-auto px-4">
+        <Courses />
+      </div>
 
       {/* Talks Section */}
       <Talks />

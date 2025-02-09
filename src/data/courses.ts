@@ -52,6 +52,6 @@ export const courses = [
     description:
       "Cracking the Front-end Interview hosted by Aashima Ahuja gives you inside tips and advice on how to prepare for the front-end engineer interviews by covering every aspect of the process. Whether you're new to interviewing or looking to improve your skills, or preparing for FAANG she guides you through the entire process.",
     image: images.gallery.adventure,
-    link: "#",
+    link: "https://www.oreilly.com/library/view/cracking-the-front-end/9780135318928/?_gl=1*xeihvm*_ga*NjExMTQ2OTc3LjE3MzU4MjA0NjA.*_ga_092EL089CH*MTczOTA4NjE2Ni4zLjEuMTczOTA4NjQ5OS41OC4wLjA.",
   },
 ];

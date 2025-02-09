@@ -19,20 +19,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     return "dark";
   });
 
-  // Initial theme setup
-  useEffect(() => {
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
-
-    if (savedTheme) {
-      setTheme(savedTheme);
-    } else {
-      // Set dark theme as default
-      setTheme("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  }, []); // Run only once on mount
-
   // Apply theme class whenever theme changes
   useEffect(() => {
     document.documentElement.classList.remove("dark", "light");
@@ -42,7 +28,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
   };
 
   return (

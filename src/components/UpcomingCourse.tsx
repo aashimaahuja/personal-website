@@ -5,7 +5,7 @@ import { upcomingCourses } from "@/data/courses";
 export default function UpcomingCourse() {
   return (
     <div className="bg-[rgb(var(--color-background-elevated))] bg-opacity-30">
-      <div className="max-w-6xl mx-auto px-4 py-24">
+      <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="space-y-12">
           {/* Title Section */}
           <div className="space-y-4">

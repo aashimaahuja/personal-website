@@ -10,7 +10,7 @@ export default function Talks() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-24">
+    <div className="max-w-6xl mx-auto px-4">
       <div className="space-y-12">
         {/* Section Header */}
         <div className="space-y-4">
