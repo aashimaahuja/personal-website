@@ -8,7 +8,10 @@ export const images = {
     astronaut: "/assets/images/image5.jpeg",
   },
   courses: {
-    git: "/assets/images/git.png",
+    git: "/assets/images/git-course.png",
     gitVideo: "/assets/images/git-video.png",
+    react: "/assets/images/react.png",
+    frontendInterviewAudio: "/assets/images/fe-interview-audio.png",
+    frontendInterview: "/assets/images/fe-interview.png",
   },
 } as const;

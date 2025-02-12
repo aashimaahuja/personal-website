@@ -47,14 +47,14 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/workshops"
+                  href="/courses"
                   className={`relative text-sm px-3 py-2 font-medium transition-colors ${
-                    pathname === "/workshops"
+                    pathname === "/courses"
                       ? "text-primary"
                       : "text-[#999999] hover:text-primary"
                   }`}
                 >
-                  {pathname === "/workshops" && (
+                  {pathname === "/courses" && (
                     <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-[rgba(var(--color-primary),0)] via-[rgba(var(--color-primary),0.4)] to-[rgba(var(--color-primary),0)]" />
                   )}
                   Courses
@@ -75,7 +75,7 @@ export default function Navbar() {
                   Talks
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/contact"
                   className={`relative text-sm px-3 py-2 font-medium transition-colors ${
@@ -89,7 +89,7 @@ export default function Navbar() {
                   )}
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -127,8 +127,6 @@ export default function Home() {
         <UpcomingCourse />
       </div>
 
-      {/* Workshops & Courses Section */}
-      {/* <WorkshopsAndCourses /> */}
       <div className="max-w-6xl mx-auto px-4 pb-16">
         <Courses />
       </div>

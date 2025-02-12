@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <div className="text-sm text-[rgb(var(--color-text-secondary))]">
-            © 2021 — present Aashima Ahuja.
+            © 2025 — present Aashima Ahuja.
           </div>
 
           {/* Navigation */}
@@ -17,18 +17,26 @@ export default function Footer() {
             <ul className="flex flex-wrap items-center gap-6">
               <li>
                 <Link
-                  href="/projects"
+                  href="/"
                   className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                 >
-                  Projects
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/about"
                   className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                 >
-                  Blog
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/courses"
+                  className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
+                >
+                  Courses
                 </Link>
               </li>
               <li>
@@ -41,28 +49,20 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/store"
-                  className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
-                >
-                  Store
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/slides"
                   className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                 >
                   Slides
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/contact"
                   className="text-sm text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
                 >
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
