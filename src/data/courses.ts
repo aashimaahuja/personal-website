@@ -6,7 +6,7 @@ export const upcomingCourses = [
     type: "Video Course",
     description:
       "The main goal of this course is to provide you with a comprehensive understanding of Git, covering everything from the basics to advanced topics you'll need in your day-to-day work. I've pulled together information based on industry standards and presented it in a way that makes both simple and complex concepts easier to grasp. Whether you're new to version control or looking to enhance your existing skills, this course aims to equip you with practical knowledge to use Git effectively and confidently collaborate with others in your development workflow.",
-    image: images.gallery.pilot,
+    image: images.courses.gitVideo,
     status: "Releasing soon",
   },
   {
@@ -14,7 +14,7 @@ export const upcomingCourses = [
     type: "Live Course",
     description:
       "Learn indispensable skills required for effective collaboration, version control, and project management within software development teams. Git's ability to track changes, manage versions, and facilitate seamless collaboration among developers is crucial in ensuring code quality, project stability, and efficient team workflows. Understanding Git and GitHub capability empowers individuals to contribute effectively to projects, manage codebase complexities, and handle versioning challenges, making Git technology (and how to powerfully make use of it) a cornerstone skill in the software development landscape.",
-    image: images.gallery.workspace,
+    image: images.courses.git,
     status: "Registration opening soon",
     date: "15 April 2025",
   },

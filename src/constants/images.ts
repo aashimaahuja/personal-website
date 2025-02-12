@@ -7,4 +7,8 @@ export const images = {
     adventure: "/assets/images/image4.jpeg",
     astronaut: "/assets/images/image5.jpeg",
   },
+  courses: {
+    git: "/assets/images/git.png",
+    gitVideo: "/assets/images/git-video.png",
+  },
 } as const;

@@ -45,9 +45,9 @@ export default function Home() {
                   Hey, I'm <span className="text-gradient">Aashima Ahuja</span>
                 </h1>
                 <p className="text-[rgb(var(--color-text-secondary))] text-xl max-w-2xl">
-                  I'm passionate about building innovative products on the web
-                  keeping good design in mind. I like learning new technologies,
-                  and contributing to open source.
+                  I am passionate about helping others in the tech community by
+                  sharing my knowledge and supporting professional growth
+                  through education and collaboration.
                 </p>
               </div>
 
@@ -123,11 +123,13 @@ export default function Home() {
       <Gallery />
 
       {/* Upcoming Course Section */}
-      <UpcomingCourse />
+      <div className="pb-16">
+        <UpcomingCourse />
+      </div>
 
       {/* Workshops & Courses Section */}
       {/* <WorkshopsAndCourses /> */}
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 pb-16">
         <Courses />
       </div>
 

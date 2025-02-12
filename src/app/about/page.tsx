@@ -26,11 +26,18 @@ export default function About() {
                   Background
                 </h2>
                 <p className="text-[rgb(var(--color-text-secondary))] leading-relaxed">
-                  With over 5 years of experience in software development, I've
-                  worked on various projects ranging from web applications to
-                  developer tools. I specialize in frontend development with
-                  React and Next.js, creating intuitive and accessible user
-                  interfaces.
+                  I am a Senior Frontend Engineer at Fareharbor, with over 8
+                  years of experience in the software industry. I have Bachelors
+                  in computer science.I have experience working in fast-paced
+                  startups like Miro to large organizations such as Booking.com
+                  and Meta. I specialize in frontend development with React and
+                  Next.js, creating intuitive and accessible user interfaces.
+                  I’m also passionate about sharing what I’ve learned. I’ve had
+                  the opportunity to speak at conferences and lead workshops
+                  around the world, helping others grow their frontend skills.
+                  As an online instructor, I have created courses like "Use Git
+                  Like a Pro", "React the Right Way", and "Cracking the Frontend
+                  Interview".
                 </p>
               </section>
 
@@ -40,7 +47,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 text-[rgb(var(--color-text-secondary))]">
                   <p className="leading-relaxed">
-                    🎯 Develop modern web applications using React and Next.js
+                    🎯 Develop modern web applications using React and Vue.js
                   </p>
                   <p className="leading-relaxed">
                     📚 Conduct workshops and training sessions on web
@@ -60,10 +67,12 @@ export default function About() {
                   Current Focus
                 </h2>
                 <p className="text-[rgb(var(--color-text-secondary))] leading-relaxed">
-                  Currently, I'm focused on building developer tools that
-                  improve workflow efficiency and teaching web development
-                  through workshops and online content. I'm also exploring new
-                  ways to make web development more accessible to beginners.
+                  Currently, I'm continuing to expand my content creation
+                  efforts, offering workshops and online courses to help
+                  developers enhance their skills. Additionally, I'm exploring
+                  new technologies and keeping up with the latest trends in
+                  frontend development to ensure my work stays at the cutting
+                  edge.
                 </p>
               </section>
             </div>
@@ -84,7 +93,7 @@ export default function About() {
                     </h3>
                     <ul className="text-[rgb(var(--color-text-secondary))] space-y-1">
                       <li>React.js</li>
-                      <li>Next.js</li>
+                      <li>Vue.js</li>
                       <li>TypeScript</li>
                       <li>TailwindCSS</li>
                     </ul>
@@ -97,7 +106,6 @@ export default function About() {
                       <li>Git</li>
                       <li>VS Code</li>
                       <li>Figma</li>
-                      <li>Docker</li>
                     </ul>
                   </div>
                 </div>
@@ -109,7 +117,7 @@ export default function About() {
                 </h2>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-3xl font-bold text-primary">5+</div>
+                    <div className="text-3xl font-bold text-primary">8+</div>
                     <div className="text-[rgb(var(--color-text-secondary))]">
                       Years Experience
                     </div>
