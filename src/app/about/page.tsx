@@ -12,7 +12,7 @@ export default function About() {
               <span className="text-gradient">About Me</span>
             </h1>
             <p className="text-[rgb(var(--color-text-secondary))] text-xl max-w-3xl">
-              I'm a software engineer and educator passionate about making
+              I&apos;m a software engineer and educator passionate about making
               technology accessible to everyone.
             </p>
           </div>
@@ -26,18 +26,19 @@ export default function About() {
                   Background
                 </h2>
                 <p className="text-[rgb(var(--color-text-secondary))] leading-relaxed">
-                  I am a Senior Frontend Engineer at Fareharbor, with over 8
+                  {`I am a Senior Frontend Engineer at Fareharbor, with over 8
                   years of experience in the software industry. I have Bachelors
                   in computer science.I have experience working in fast-paced
                   startups like Miro to large organizations such as Booking.com
                   and Meta. I specialize in frontend development with React and
                   Next.js, creating intuitive and accessible user interfaces.
-                  I’m also passionate about sharing what I’ve learned. I’ve had
-                  the opportunity to speak at conferences and lead workshops
-                  around the world, helping others grow their frontend skills.
-                  As an online instructor, I have created courses like "Use Git
-                  Like a Pro", "React the Right Way", and "Cracking the Frontend
-                  Interview".
+                  I&apos;m also passionate about sharing what I&apos;ve learned.
+                  I&apos;ve had the opportunity to speak at conferences and lead
+                  workshops around the world, helping others grow their frontend
+                  skills. As an online instructor, I have created courses like
+                  "Use Git Like a Pro", "React the Right Way", and "Cracking the
+                  Frontend Interview"`}
+                  .
                 </p>
               </section>
 
@@ -67,12 +68,12 @@ export default function About() {
                   Current Focus
                 </h2>
                 <p className="text-[rgb(var(--color-text-secondary))] leading-relaxed">
-                  Currently, I'm continuing to expand my content creation
+                  Currently, I&apos;m continuing to expand my content creation
                   efforts, offering workshops and online courses to help
-                  developers enhance their skills. Additionally, I'm exploring
-                  new technologies and keeping up with the latest trends in
-                  frontend development to ensure my work stays at the cutting
-                  edge.
+                  developers enhance their skills. Additionally, I&apos;m
+                  exploring new technologies and keeping up with the latest
+                  trends in frontend development to ensure my work stays at the
+                  cutting edge.
                 </p>
               </section>
             </div>

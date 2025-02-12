@@ -42,7 +42,8 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-[rgb(var(--color-text))] text-5xl sm:text-6xl font-bold">
-                  Hey, I'm <span className="text-gradient">Aashima Ahuja</span>
+                  Hey, I&apos;m{" "}
+                  <span className="text-gradient">Aashima Ahuja</span>
                 </h1>
                 <p className="text-[rgb(var(--color-text-secondary))] text-xl max-w-2xl">
                   I am passionate about helping others in the tech community by
