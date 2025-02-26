@@ -15,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/assets/images/icon.png" />
+        <title>Aashima Ahuja</title>
+      </head>
       {/* <head>
         <script
           dangerouslySetInnerHTML={{
