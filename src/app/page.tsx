@@ -55,7 +55,7 @@ export default function Home() {
               {/* Social Links */}
               <div className="flex items-center gap-4">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/aashimaahuja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
@@ -70,7 +70,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/aashimaahuja22"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
@@ -85,7 +85,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/aashimaahuja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full text-[rgb(var(--color-text-secondary))] hover:text-primary transition-colors"
